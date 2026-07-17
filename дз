@@ -1,0 +1,53 @@
+Задача 1
+
+let userName = ‘Vova’;
+let userBalance = 90;
+
+let label = ‘’;
+
+if (userName === ‘admin’) {
+label = ‘Администратор’;
+} else if (userName === ‘’) {
+label = ‘Гость’;
+} else {
+if (userBalance > 5000) {
+label = ‘Вип-клиент’;
+} else if (userBalance > 1000) {
+label = ‘Постоянный покупатель’;
+} else {
+label = ‘’;
+}
+}
+
+console.log(label);
+
+Задача 2
+
+let user = ‘netologist’;
+let orderOwner = ‘leo_tolstoy’;
+
+if (user === ‘admin’ || user === orderOwner) {
+console.log(‘Редактирование разрешено’);
+} else {
+console.log(‘Заказ нельзя редактировать’);
+}
+
+Задача 3
+
+let bonusBalance = 500;
+let purchaseCountThisMonth = 2;
+let standardPercent = 10;
+let increasedPercent = 20;
+let frequentPurchaseBonus = 5;
+
+let totalPercent = standardPercent;
+
+if (bonusBalance > 5000) {
+totalPercent = increasedPercent;
+}
+
+if (purchaseCountThisMonth > 1) {
+totalPercent = totalPercent + frequentPurchaseBonus;
+}
+
+console.log('Процент от покупки: ’ + totalPercent);
