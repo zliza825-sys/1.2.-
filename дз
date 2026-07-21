@@ -1,25 +1,21 @@
 Задача 1
 
-let userName = ‘Vova’;
+let userName = 'Vova';
 let userBalance = 90;
 
-let label = ‘’;
+let status = '';
 
-if (userName === ‘admin’) {
-label = ‘Администратор’;
-} else if (userName === ‘’) {
-label = ‘Гость’;
-} else {
-if (userBalance > 5000) {
-label = ‘Вип-клиент’;
+if (userName === 'admin') {
+  status = 'Администратор';
+} else if (userName === '') {
+  status = 'Гость';
+} else if (userBalance > 5000) {
+  status = 'Вип-клиент';
 } else if (userBalance > 1000) {
-label = ‘Постоянный покупатель’;
-} else {
-label = ‘’;
-}
+  status = 'Постоянный покупатель';
 }
 
-console.log(label);
+console.log(status);
 
 Задача 2
 
