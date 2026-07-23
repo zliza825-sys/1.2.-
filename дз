@@ -13,6 +13,8 @@ if (userName === 'admin') {
   status = 'Вип-клиент';
 } else if (userBalance > 1000) {
   status = 'Постоянный покупатель';
+} else {
+  status = 'Обычный покупатель';
 }
 
 console.log(status);
